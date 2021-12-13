@@ -12,6 +12,7 @@
 `https://github.com/dluismendezpy/bookak.git`
 
 **Open your terminal or Package Manager Console and type**
+
     add-migration <migration-name>
     update-database
 
@@ -25,4 +26,4 @@
 - Microsoft.EntityFrameworkCore.Tools
 - Microsoft.VisualStudio.Web.CodeGeneration.Design
 - Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
- 
+- 
