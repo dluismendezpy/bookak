@@ -9,7 +9,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <h3>Create</h3>
+            <h3>Delete</h3>
         </div>
     </div>
 
@@ -43,14 +43,37 @@
                     <input asp-for="Created_At" class="form-control" readonly />
                     <span asp-validation-for="Created_At" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <input type="submit" value="Delete" class="btn btn-danger" />
+
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                    Delete
+                </button>
+
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Bookak</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to continue?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <input type="submit" value="Delete" class="btn btn-danger" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
-        </div>    
+        </div>
     </div>
 </div>
 
 @section Scripts{
-    @{<partial name="_ValidationScriptsPartial" />}
+@{
+    <partial name="_ValidationScriptsPartial" />}
 }
