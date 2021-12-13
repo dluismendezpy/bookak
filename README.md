@@ -26,4 +26,3 @@
 - Microsoft.EntityFrameworkCore.Tools
 - Microsoft.VisualStudio.Web.CodeGeneration.Design
 - Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
-- 
