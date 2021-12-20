@@ -20,6 +20,7 @@
 - Visual Studio (or any IDE or editor of your choice)
 - SQL Server
 - .NET CORE 5
+- ASP.NET Core Runtime (Hosting Bundle)
 
 ### Dependencies 
 - Microsoft.EntityFrameworkCore.SqlServer
